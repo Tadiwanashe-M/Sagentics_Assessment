@@ -6,8 +6,8 @@ import { motion } from "framer-motion";
 export function PublicNav() {
   return (
     <motion.header
-      initial={{ opacity: 0, y: -8 }}
-      animate={{ opacity: 1, y: 0 }}
+      initial={{ y: -8 }}
+      animate={{ y: 0 }}
       transition={{ duration: 0.35 }}
       className="absolute inset-x-0 top-0 z-20 flex justify-center px-4 pt-6"
     >

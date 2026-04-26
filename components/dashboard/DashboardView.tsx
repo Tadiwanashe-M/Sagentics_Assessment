@@ -59,8 +59,8 @@ export function DashboardView({ initial }: { initial: FeedbackRow[] }) {
     <div className="mx-auto max-w-6xl space-y-10 px-4 py-8 sm:px-6">
       <section className="grid gap-4 sm:grid-cols-3">
         <motion.div
-          initial={{ opacity: 0, y: 12 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ y: 12 }}
+          animate={{ y: 0 }}
           transition={{ delay: 0.05 }}
         >
           <Card className="p-5">
@@ -72,8 +72,8 @@ export function DashboardView({ initial }: { initial: FeedbackRow[] }) {
           </Card>
         </motion.div>
         <motion.div
-          initial={{ opacity: 0, y: 12 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ y: 12 }}
+          animate={{ y: 0 }}
           transition={{ delay: 0.1 }}
         >
           <Card className="p-5">
@@ -89,8 +89,8 @@ export function DashboardView({ initial }: { initial: FeedbackRow[] }) {
           </Card>
         </motion.div>
         <motion.div
-          initial={{ opacity: 0, y: 12 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ y: 12 }}
+          animate={{ y: 0 }}
           transition={{ delay: 0.15 }}
         >
           <Card className="p-5">
@@ -131,8 +131,8 @@ export function DashboardView({ initial }: { initial: FeedbackRow[] }) {
 
         {items.length === 0 ? (
           <motion.div
-            initial={{ opacity: 0, y: 8 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ y: 8 }}
+            animate={{ y: 0 }}
             className="flex flex-col items-center justify-center rounded-2xl border border-dashed border-zinc-700/80 bg-zinc-800/30 py-20 text-center"
           >
             <p className="text-sm font-medium text-zinc-300">No feedback yet</p>
@@ -148,9 +148,9 @@ export function DashboardView({ initial }: { initial: FeedbackRow[] }) {
                   key={row.id}
                   role="listitem"
                   layout
-                  initial={{ opacity: 0, y: 16 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, scale: 0.97, x: -12 }}
+                  initial={{ y: 16 }}
+                  animate={{ y: 0 }}
+                  exit={{ scale: 0.97, x: -12 }}
                   transition={{
                     type: "spring",
                     stiffness: 380,

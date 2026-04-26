@@ -7,8 +7,8 @@ export function Landing() {
   return (
     <main className="relative flex flex-1 flex-col items-center justify-center px-4 py-24">
       <motion.div
-        initial={{ opacity: 0, y: 16 }}
-        animate={{ opacity: 1, y: 0 }}
+        initial={{ y: 16 }}
+        animate={{ y: 0 }}
         transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
         className="relative z-10 w-full max-w-xl text-center"
       >

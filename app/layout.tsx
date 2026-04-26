@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Providers } from "@/components/providers/Providers";
 import { PageAnimate } from "@/components/layout/PageAnimate";
@@ -20,6 +20,12 @@ export const metadata: Metadata = {
     template: "%s · Client Feedback",
   },
   description: "Collect client feedback and review it in a focused dashboard.",
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
 };
 
 export default function RootLayout({
